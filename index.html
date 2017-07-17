@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        margin: 0;
+      }
+      
+      .video-gallery .thumbnails-container ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .video-container iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0; top: 0;
+      }
+      
+      .video-gallery .video-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 51%;
+      }
+      
+      .video-gallery .thumbnails-container {
+        margin-top: 10px;
+        overflow-x: hidden;
+        width: 100%;
+      }
+      
+      .video-gallery .thumbnails-container li {
+        cursor: pointer;
+        display: block;
+      }
+      
+      .video-gallery .thumbnails-container li:not(:first-child) {
+        margin-left: 10px;
+      }
+      
+      .video-gallery .thumbnails-container li img {
+        width: 100%;
+      }
+      
+      .video-gallery .arrow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(50,50,50,.3);
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+        color: white;
+        cursor: pointer;
+      }
+      
+      .video-gallery .arrow-left {
+        left: 0;
+      }
+      
+      .video-gallery .thumbnails-viewport {
+        position: relative;
+      }
+      
+      .video-gallery .arrow-right {
+        right: 0;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="video-gallery" data-base="https://www.youtube.com/embed/" data-ids="f-wWBGo6a2w,HcEJr8h_yGM,Urd0IK0WEWU,wNAfCByRch8">
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/f-wWBGo6a2w" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="thumbnails-viewport">
+        <div class="thumbnails-container">
+          <ul>
+            <li>
+              <img src="https://img.youtube.com/vi/f-wWBGo6a2w/mqdefault.jpg" />
+            </li>
+            <li>
+              <img src="https://img.youtube.com/vi/HcEJr8h_yGM/mqdefault.jpg" />
+            </li>
+            <li>
+              <img src="https://img.youtube.com/vi/Urd0IK0WEWU/mqdefault.jpg" />
+            </li>
+            <li>
+              <img src="https://img.youtube.com/vi/wNAfCByRch8/mqdefault.jpg" />
+            </li>
+          </ul>
+        </div>
+        <div class="arrow arrow-left">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+          </div>
+          <div class="arrow arrow-right">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </div>
+      </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
